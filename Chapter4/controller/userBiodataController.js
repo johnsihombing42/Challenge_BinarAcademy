@@ -1,7 +1,5 @@
 const { user_game_biodata } = require("../models");
 
-// sequelize model:generate --name user_game_biodata --attributes id_user:integer,name:string,email:string,address:string,phone:string
-
 module.exports = {
   readAllData: async (req, res) => {
     try {
