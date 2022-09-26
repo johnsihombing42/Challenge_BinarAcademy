@@ -20,6 +20,7 @@ module.exports = {
         });
       }
 
+      //hash password user
       const encryptedPassword = await bcrypt.hash(password, 10);
       const user = await user_game.create({
         username,
