@@ -28,7 +28,7 @@ module.exports = {
       });
 
       return res.status(201).json({
-        status: false,
+        status: "OK",
         message: "Register user success",
         data: {
           username: user.username,
@@ -68,7 +68,7 @@ module.exports = {
       const token = jwt.sign(payload, JWT_SIGNATURE_KEY);
 
       return res.status(200).json({
-        status: false,
+        status: "OK",
         message: "success",
         data: {
           token: token,

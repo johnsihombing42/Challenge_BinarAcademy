@@ -24,7 +24,7 @@ router.patch(
   userBiodata.user_game_biodata.updateUserBiodata
 );
 router.delete(
-  "/:userId",
+  "/delete/:userId",
   middleware.mustLogin,
   userBiodata.user_game_biodata.deleteUserBiodata
 );
