@@ -18,7 +18,7 @@ router.post(
   middleware.mustLogin,
   userHistory.user_game_history.createUserHistory
 );
-router.put(
+router.patch(
   "/update/:userId",
   middleware.mustLogin,
   userHistory.user_game_history.updateUserHistory
