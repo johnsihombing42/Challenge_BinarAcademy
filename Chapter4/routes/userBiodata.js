@@ -18,7 +18,7 @@ router.post(
   middleware.mustLogin,
   userBiodata.user_game_biodata.createUserBiodata
 );
-router.put(
+router.patch(
   "/update/:userId",
   middleware.mustLogin,
   userBiodata.user_game_biodata.updateUserBiodata
