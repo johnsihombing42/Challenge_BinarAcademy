@@ -14,7 +14,7 @@ router.get(
   userBiodata.user_game_biodata.readDetailUser
 );
 router.post(
-  "/",
+  "/create",
   middleware.mustLogin,
   userBiodata.user_game_biodata.createUserBiodata
 );
