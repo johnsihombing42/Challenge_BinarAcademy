@@ -15,13 +15,9 @@ router.get("/userbiodata", mid.mustLogin, userBiodata.readAllData);
 router.put("/userbiodata/:userId", mid.mustLogin, userBiodata.update);
 router.delete("userbiodata/:userId", mid.mustLogin, userBiodata.delete);
 
-router.post("/userhistory", mid.mustLogin, userHistory.createUserHistory);
+router.post("/userhistory", mid.mustLogin, userHistory.create);
 router.get("/userhistory", mid.mustLogin, userHistory.readUserHistory);
-router.put("/userhistory:userId", mid.mustLogin, userHistory.updateUserHistory);
-router.delete(
-  "/userhistory:userId",
-  mid.mustLogin,
-  userHistory.deleteUserHistory
-);
+router.put("/userhistory:userId", mid.mustLogin, userHistory.update);
+router.delete("/userhistory:userId", mid.mustLogin, userHistory.delete);
 
 module.exports = router;
