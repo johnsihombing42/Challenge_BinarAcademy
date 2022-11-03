@@ -9,19 +9,11 @@ router.post("/auth/register", auth.register);
 router.post("/auth/login", auth.login);
 router.post("/auth/whoami", mid.mustLogin, auth.whoami);
 
-router.post("/userbiodata", mid.mustLogin, userBiodata.createUserBiodata);
+router.post("/userbiodata", mid.mustLogin, userBiodata.create);
 router.get("/userbiodata", mid.mustLogin, userBiodata.readAllData);
 // router.get("/userbiodata/:userId", mid.mustLogin, userBiodata.readDetailUser);
-router.put(
-  "/userbiodata/:userId",
-  mid.mustLogin,
-  userBiodata.updateUserBiodata
-);
-router.delete(
-  "userbiodata/:userId",
-  mid.mustLogin,
-  userBiodata.deleteUserBiodata
-);
+router.put("/userbiodata/:userId", mid.mustLogin, userBiodata.update);
+router.delete("userbiodata/:userId", mid.mustLogin, userBiodata.delete);
 
 router.post("/userhistory", mid.mustLogin, userHistory.createUserHistory);
 router.get("/userhistory", mid.mustLogin, userHistory.readUserHistory);

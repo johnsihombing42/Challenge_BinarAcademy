@@ -15,28 +15,28 @@ module.exports = {
       console.log("Gagal menampilkan data");
     }
   },
-  //   readDetailUser: async (req, res) => {
-  //     try {
-  //       const { userId } = req.params;
-  //       const userGameBiodata = await user_game_biodata.findOne({
-  //         where: { id: userId },
-  //       });
-  //       return res.status(200).json({
-  //         status: "success",
-  //         mesage: "Read Data",
-  //         data: {
-  //           id_user: userGameBiodata.id_user,
-  //           name: userGameBiodata.name,
-  //           email: userGameBiodata.email,
-  //           addres: userGameBiodata.addres,
-  //           phone: userGameBiodata.phone,
-  //         },
-  //       });
-  //     } catch (error) {
-  //       res.json(error).status(422);
-  //     }
-  //   },
-  createUserBiodata: async (req, res) => {
+  readDetailUser: async (req, res) => {
+    try {
+      const { userId } = req.params;
+      const userGameBiodata = await user_game_biodata.findOne({
+        where: { id: userId },
+      });
+      return res.status(200).json({
+        status: "success",
+        mesage: "Read Data",
+        data: {
+          id_user: userGameBiodata.id_user,
+          name: userGameBiodata.name,
+          email: userGameBiodata.email,
+          addres: userGameBiodata.addres,
+          phone: userGameBiodata.phone,
+        },
+      });
+    } catch (error) {
+      res.json(error).status(422);
+    }
+  },
+  create: async (req, res) => {
     try {
       const { id_user, name, email, address, phone } = req.body;
       const userGameBiodata = await user_game_biodata.create({
@@ -63,7 +63,7 @@ module.exports = {
       console.log("Gagal menambah data");
     }
   },
-  updateUserBiodata: async (req, res) => {
+  update: async (req, res) => {
     try {
       const { id_user, name, email, address, phone } = req.body;
       const { userId } = req.params;
@@ -88,7 +88,7 @@ module.exports = {
       console.log(err);
     }
   },
-  deleteUserBiodata: async (req, res) => {
+  delete: async (req, res) => {
     try {
       const { id } = req.params;
       const data = await user_game_biodata.findOne({ where: { id: id } });
