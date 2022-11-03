@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const userHistory = require("../controller/");
+const userHistory = require("../controllers");
 const middleware = require("../helpers/middleware");
+const authorize = require("../middlewares/authorize");
+const roles = require("../utils/roles");
 
 router.get(
   "/",
@@ -9,22 +11,25 @@ router.get(
   userHistory.user_game_history.readUserHistory
 );
 router.get(
-  "/:userId",
+  "/show/:userId",
   middleware.mustLogin,
   userHistory.user_game_history.readDetailHistory
 );
 router.post(
   "/",
+  authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
   userHistory.user_game_history.createUserHistory
 );
 router.put(
   "/:userId",
+  authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
   userHistory.user_game_history.updateUserHistory
 );
 router.delete(
   "/:userId",
+  authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
   userHistory.user_game_history.deleteUserHistory
 );
