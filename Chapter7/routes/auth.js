@@ -6,8 +6,10 @@ const controller = require("../controllers/index");
 router.post("/user/register", controller.auth.register);
 router.post("/user/login", controller.auth.login);
 
+// login oauth google
 router.get("/login/google", controller.auth.google);
+
+// login oauth facebook
 router.get("/login/facebook", controller.auth.facebook);
-// login oauth
 
 module.exports = router;
