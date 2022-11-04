@@ -31,7 +31,7 @@ module.exports = {
       res.json(error).status(422);
     }
   },
-  createUserBiodata: async (req, res) => {
+  create: async (req, res) => {
     try {
       const { id_user, name, email, address, phone } = req.body;
       const userGameBiodata = await user_game_biodata.create({
@@ -52,7 +52,7 @@ module.exports = {
       console.log("Gagal menambah data");
     }
   },
-  updateUserBiodata: async (req, res) => {
+  update: async (req, res) => {
     try {
       const { id_user, name, email, address, phone } = req.body;
       const { userId } = req.params;
@@ -78,7 +78,7 @@ module.exports = {
       console.log(err);
     }
   },
-  deleteUserBiodata: async (req, res) => {
+  delete: async (req, res) => {
     try {
       const { userId } = req.params;
       const userGameBiodata = await user_game_biodata.destroy({

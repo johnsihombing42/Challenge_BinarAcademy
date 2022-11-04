@@ -31,7 +31,7 @@ module.exports = {
       res.json(error).status(422);
     }
   },
-  createUserHistory: async (req, res) => {
+  create: async (req, res) => {
     try {
       const { id_user, time_list, score } = req.body;
       const userGameHistory = await user_game_history.create({
@@ -50,7 +50,7 @@ module.exports = {
       console.log("Gagal menambah data");
     }
   },
-  updateUserHistory: async (req, res) => {
+  update: async (req, res) => {
     try {
       const { id_user, time_list, score } = req.body;
       const { userId } = req.params;
@@ -73,7 +73,7 @@ module.exports = {
       console.log(err);
     }
   },
-  deleteUserHistory: async (req, res) => {
+  delete: async (req, res) => {
     try {
       const { userId } = req.params;
       const userGameHistory = await user_game_history.destroy({
