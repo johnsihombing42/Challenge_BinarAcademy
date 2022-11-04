@@ -19,19 +19,19 @@ router.post(
   "/",
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userHistory.user_game_history.createUserHistory
+  userHistory.user_game_history.create
 );
 router.put(
   "/:userId",
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userHistory.user_game_history.updateUserHistory
+  userHistory.user_game_history.update
 );
 router.delete(
   "/:userId",
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userHistory.user_game_history.deleteUserHistory
+  userHistory.user_game_history.delete
 );
 
 module.exports = router;

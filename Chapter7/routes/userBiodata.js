@@ -22,21 +22,21 @@ router.post(
   restrict,
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userBiodata.user_game_biodata.createUserBiodata
+  userBiodata.user_game_biodata.create
 );
 router.put(
   "/:userId",
   restrict,
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userBiodata.user_game_biodata.updateUserBiodata
+  userBiodata.user_game_biodata.update
 );
 router.delete(
   "/:userId",
   restrict,
   authorize([roles.admin, roles.superadmin]),
   middleware.mustLogin,
-  userBiodata.user_game_biodata.deleteUserBiodata
+  userBiodata.user_game_biodata.delete
 );
 
 module.exports = router;
