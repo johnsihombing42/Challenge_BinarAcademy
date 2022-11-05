@@ -1,7 +1,7 @@
 # Challenge_BinarAcademy
-## Kumpulan challenge yang saya kerjakan selama mengikuti bootcamp Binar Academy
+Kumpulan challenge yang saya kerjakan selama mengikuti bootcamp Binar Academy
 
-- Chapter 1 - CLI Calculator:
+- Chapter 1 - CLI Calculator
 - Chapter 2 - Program Input Nilai Siswa
 - Chapter 3 - Membuat ERD, Database, dan CRUD DML
 - Chapter 4 - RESTful API with ExpressJS
