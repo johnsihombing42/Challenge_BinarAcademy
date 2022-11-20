@@ -1,0 +1,414 @@
+{
+  "item": [
+    {
+      "id": "83d73100-ecae-4988-b82c-34099cebd4bc",
+      "name": "Register User Game",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "auth", "register"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [{ "key": "Content-type", "value": "application/json" }],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"binaracademy42\",\"password\":\"binar123\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "322df4f7-c052-4d7a-8d6d-6bc334eca37e",
+      "name": "Login User Game",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "auth", "login"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [{ "key": "Content-type", "value": "application/json" }],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"binaracademy42\",\"password\":\"binar123\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "ea78f7db-d594-4648-a92d-79d4de1823db",
+      "name": "Show User Game",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "show"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "18d6820e-9db9-4746-b306-6490430117bc",
+      "name": "Show User Game By Id",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "show", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "a3324f6a-5332-4178-9d24-1b4f0a2c0326",
+      "name": "Update User",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "update", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"johnsihombing123\",\"password\":\"sihombinggg123\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "14a31e72-b4c6-48b6-b4b3-2c9ba5001847",
+      "name": "Delete User",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["users", "delete", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"id\":\"value id\"}" }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "f9c1c880-c370-45ee-a393-b689a8f069c8",
+      "name": "Create User Biodata",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["biodata", "create"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id_user\":10,\"name\":\"John Tri Sihombing\",\"email\":\"sihombing42@gmail.com\",\"address\":\"Medan\",\"phone\":\"08534333999\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "04818a4f-705e-4f94-9e9f-724f4bf839f4",
+      "name": "Show User Biodata",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["biodata", "show"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "ec6325b4-1efe-40c0-82a6-383e77806c99",
+      "name": "Show User Biodata By Id",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["biodata", "show", "2"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "9a324d19-2972-4309-9b33-be3356136ac9",
+      "name": "Update User Biodata",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["biodata", "update", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id_user\":10,\"name\":\"John Sihombing\",\"email\":\"sihombing4242@gmail.com\",\"address\":\"Kota Medan\",\"phone\":\"08534333999\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "a1464194-05f8-48c8-a750-069e132d5611",
+      "name": "Delete User Biodata",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["biodata", "delete", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"id\":\"value id\"}" }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "f8292d73-c687-4471-8ff5-81084b0449d1",
+      "name": "Create User History",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["history", "create"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id_user\":10,\"time_list\":100,\"score\":120}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "1a7ee61a-7766-4315-b806-c0553f0c8640",
+      "name": "Show User History",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["history", "show"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "913c282a-5ac5-4427-99db-764268418005",
+      "name": "Show User History By Id",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["history", "show", "10"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "e29979af-b027-4e92-a8c8-9daaf7f52bce",
+      "name": "Update User History",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["history", "update", "10"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id_user\":11,\"time_list\":130,\"score\":150}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "2a66c584-dae5-460e-b85e-772f21b66596",
+      "name": "Delete User History",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": ["history", "delete", "1"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-type", "value": "application/json" },
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInVzZXJuYW1lIjoiam9obnNpaG9tYmluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEtLV25JbDRZR2I3TTFnVGdhbjVYNU9FdTM2LmZJTkR1MzJ4amViYnRONkJlUlkwb2pmQi5TIiwiaWF0IjoxNjY0OTM3NTI2fQ.0n6g-A_tolPKniZyMaIJ2Hgyw-M8VC2qdRsiuxcdxBU"
+          }
+        ],
+        "method": "DELETE",
+        "body": { "mode": "raw", "raw": "{\"id\":\"value id\"}" }
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "6deea67e-6cfa-4f46-bda4-fbb0699c9f40",
+    "name": "Dokumentasi API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
